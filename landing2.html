@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: cadetblue;
+        }
+        a:hover {
+            color: darkcyan;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+        }
+        #first {
+            position: relative;
+            height: 100vh;
+            background-image: url(https://techcommunity.microsoft.com/t5/image/serverpage/image-id/481551i790CE55658E2D6CC/image-size/large?v=v2&px=999);
+            background-size: cover;
+            background-position: center bottom; /* Adjusted background position */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            padding: 20px;
+        }
+        #first .title {
+            position: absolute;
+            top: 10%; /* Adjust top positioning as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            color: cadetblue; /* Adjust text color */
+            font-size: 2rem; /* Adjust font size */
+        }
+        #first h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            color:lightyellow;
+            font-weight: bolder;
+            margin-bottom: 10px; /* Optional: Adjust spacing between text and image */
+        }
+        #second {
+            padding: 30px 0;
+            margin-bottom: 2rem;
+            color: rgb(97, 64, 113);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #second p {
+            margin-bottom: 1rem;
+        }
+        #second button {
+            font-size: 1.5rem;
+            padding: 15px 40px;
+            background-color: rgb(102, 205, 170);
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        #features {
+            padding: 40px;
+            background-color: teal;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        .feature {
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 1rem;
+        }
+        #cta {
+            background-color: thistle;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        #cta h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        #cta button {
+            font-size: 1.5rem;
+            padding: 15px 40px;
+            background-color: rgb(102, 205, 170);
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        @media(max-width: 768px) {
+            #features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <section id="first">
+        <div class="title">
+            <h1>DEVELOPERS COLLABORATION HUB</h1>
+        </div>
+    </section>
+    <section id="second">
+        <p>The Developer Collaboration Hub serves as a central platform for discussion, learning resources, project collaboration, and networking opportunities where programmers, engineers, and many more can connect, collaborate, and share knowledge.</p>
+        <button type="button">Let's Get Started!</button>
+    </section>
+    <section id="features">
+        <div class="feature">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/661/819/original/teamwork-concept-isometric-illustration-vector.jpg" alt="project">
+            <h3>Project Collaboration Platform</h3>
+            <p>Facilitate project collaboration by enabling users to create, join, and contribute to open source projects, hackathons, and coding challenges.</p>
+        </div>
+
+        <div class="feature">
+            <img src="https://st2.depositphotos.com/3591429/8327/i/450/depositphotos_83274880-Forum-Discussion-Topic.jpg" alt="discussion">
+            <h3>Discussion Forums</h3>
+            <p>Hosts various discussion forums covering a wide range of technical topics, programming languages, tools, and industry trends where users can engage in discussions with fellow developers.</p>
+        </div>
+
+        <div class="feature">
+            <img src="https://www.callcentrehelper.com/images/stories/2020/03/laptop-turns-into-book-760.jpg" alt="knowledge base">
+            <h3>Knowledge Base</h3>
+            <p>Offers a comprehensive knowledge base containing articles, tutorials, guides, and best practices on diverse technical subjects.Organize content into categories and tags for easy navigation and searchability.</p>
+        </div>
+
+        <div class="feature">
+            <img src="https://kolibrigames.blob.core.windows.net/$web/2020/09/img-01-.png" alt="code sharing">
+            <h3>Code Sharing Repository</h3>
+            <p>A place where users can publish, showcase, and discover code snippets, libraries, and projects.</p>
+        </div>
+
+        <div class="feature">
+            <img src="https://img.freepik.com/premium-vector/question-answer-vector-concept-illustration-young-people-masks-standing-near-letters-group-busy-male-female-characters-cartoon-style-flat-women-men-with-letters-symbols-q_165932-375.jpg" alt="qna">
+            <h3>Q&A Section</h3>
+            <p>Providing a delicate Question and answer section where users can post technical queries and receive instance from the community.Users can vote on answers to highlight the most helpful responses</p>
+        </div>
+
+        <div class="feature">
+            <img src="https://images.ctfassets.net/4w8qvp17lo47/1fnONK6KJf37PPkkZqlreq/412c146662ed3c46fce3ba72ab715074/Rewarding_yourself_is_important_when_it_comes_to_diabetes_management_prediabetes_type_2_diabetes.jpg" alt="rewards">
+            <h3>Recognition and Rewards</h3>
+            <p>Recognize and Reward active community contributors through badges, leaderboards, and achievements.</p>
+        </div>
+    </section>
+
+    <section id="cta">
+        <h3>Ready to collaborate with DEVELOPERS?</h3>
+        <button type="button">Sign Up for FREE!</button>
+    </section>
+</div>
+</body>
+</html>
